@@ -431,9 +431,11 @@ class FormatWriter(formatOps: FormatOps) {
             !(prevNonComment(formatToken).left.is[LeftParen] &&
               right.is[RightParen]) && // isn't empty parentheses
             right.is[CloseDelim] && isNewline =>
-        sb.insert(
-          sb.length - left.syntax.length - prevFormatToken.between.length,
-          ",")
+        val leftWhitespace = prevFormatToken.between
+          .dropWhile(!_.is[LF])
+          .dropRight(1)
+          .length + 1
+        sb.insert(sb.length - left.syntax.length - leftWhitespace, ",")
         sb.append(whitespace)
 
       // foo(
@@ -457,8 +459,11 @@ class FormatWriter(formatOps: FormatOps) {
       case TrailingCommas.never
           if left.is[Comment] && prevFormatToken.left.is[Comma] &&
             right.is[CloseDelim] && isNewline =>
-        sb.deleteCharAt(
-          sb.length - left.syntax.length - prevFormatToken.between.length - 1)
+        val leftWhitespace = prevFormatToken.between
+          .dropWhile(!_.is[LF])
+          .dropRight(1)
+          .length + 1
+        sb.deleteCharAt(sb.length - left.syntax.length - leftWhitespace - 1)
         sb.append(whitespace)
 
       // foo(a, b,)
