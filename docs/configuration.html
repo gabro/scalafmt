@@ -59,11 +59,11 @@ code on your phone.</li>
   */</span>
 </code></pre>
 <pre><code class="hljs css languages- scala original"><span class="hljs-comment">/** Align by second asterisk.
-  *
-  */</span>
+ *
+ */</span>
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">docstrings</span> <span class="hljs-string">=</span> <span class="hljs-string">ScalaDoc</span>
+<pre><code class="hljs css languages- scala">docstrings = <span class="hljs-type">ScalaDoc</span>
 </code></pre>
 </p></details>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-comment">/** Align by first asterisk.
@@ -71,11 +71,11 @@ code on your phone.</li>
  */</span>
 </code></pre>
 <pre><code class="hljs css languages- scala original"><span class="hljs-comment">/** Align by first asterisk.
- *
- */</span>
+  *
+  */</span>
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">docstrings</span> <span class="hljs-string">=</span> <span class="hljs-string">JavaDoc</span>
+<pre><code class="hljs css languages- scala">docstrings = <span class="hljs-type">JavaDoc</span>
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="assumestandardlibrarystripmargin"></a><a href="#assumestandardlibrarystripmargin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>assumeStandardLibraryStripMargin</code></h3>
@@ -95,13 +95,13 @@ code on your phone.</li>
 </code></pre>
 <pre><code class="hljs css languages- scala original">val example1 =
   s"""Examples:
-     |  * one
-     |  * two
-     |  * $three
-     |""".stripMargin
+  |  * one
+  |  * two
+  |  * $three
+  |""".stripMargin
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">assumeStandardLibraryStripMargin</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">assumeStandardLibraryStripMargin = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <p>The pipe character can immediately follow the opening <code>&quot;&quot;&quot;</code></p>
@@ -114,13 +114,13 @@ code on your phone.</li>
 </code></pre>
 <pre><code class="hljs css languages- scala original">val example2 =
   s"""|Examples:
-      |  * one
-      |  * two
-      |  * $three
-      |""".stripMargin
+  |  * one
+  |  * two
+  |  * $three
+  |""".stripMargin
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">assumeStandardLibraryStripMargin</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">assumeStandardLibraryStripMargin = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <h2><a class="anchor" aria-hidden="true" id="indentation"></a><a href="#indentation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Indentation</h2>
@@ -133,12 +133,12 @@ code on your phone.</li>
 )
 </code></pre>
 <pre><code class="hljs css languages- scala original">function(
-  argument1, <span class="hljs-comment">// indented by 2</span>
-  <span class="hljs-string">""</span>
+argument1, <span class="hljs-comment">// indented by 2</span>
+<span class="hljs-string">""</span>
 )
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">continuationIndent.defnSite</span> <span class="hljs-string">=</span> <span class="hljs-number">2</span>
+<pre><code class="hljs css languages- scala">continuationIndent.defnSite = <span class="hljs-number">2</span>
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="continuationindentdefnsite"></a><a href="#continuationindentdefnsite" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>continuationIndent.defnSite</code></h3>
@@ -153,7 +153,7 @@ argument1: <span class="hljs-type">Type1</span> <span class="hljs-comment">// in
 ): <span class="hljs-type">ReturnType</span>
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">continuationIndent.defnSite</span> <span class="hljs-string">=</span> <span class="hljs-number">4</span>
+<pre><code class="hljs css languages- scala">continuationIndent.defnSite = <span class="hljs-number">4</span>
 </code></pre>
 </p></details>
 <h2><a class="anchor" aria-hidden="true" id="alignment"></a><a href="#alignment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Alignment</h2>
@@ -161,20 +161,30 @@ argument1: <span class="hljs-type">Type1</span> <span class="hljs-comment">// in
 <p>Align has several nested fields, which you can customize. However, it comes with
 four possible defaults: none, some, more, &amp; most.</p>
 <h3><a class="anchor" aria-hidden="true" id="align"></a><a href="#align" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>align</code></h3>
+<h4><a class="anchor" aria-hidden="true" id="align-none"></a><a href="#align-none" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>align=none</code></h4>
+<pre><code class="hljs css languages- scala formatted">x <span class="hljs-keyword">match</span> { <span class="hljs-comment">// false for case arrows</span>
+  <span class="hljs-keyword">case</span> <span class="hljs-number">2</span> =&gt; <span class="hljs-number">22</span> <span class="hljs-comment">// also comments!</span>
+  <span class="hljs-keyword">case</span> <span class="hljs-number">22</span> =&gt; <span class="hljs-number">222</span> <span class="hljs-comment">// don't align me!</span>
+}
+</code></pre>
+<pre><code class="hljs css languages- scala original">x <span class="hljs-keyword">match</span> { <span class="hljs-comment">// false for case arrows</span>
+  <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>  =&gt; <span class="hljs-number">22</span> <span class="hljs-comment">// also comments!</span>
+  <span class="hljs-keyword">case</span> <span class="hljs-number">22</span> =&gt; <span class="hljs-number">222</span> <span class="hljs-comment">// don't align me!</span>
+}
+</code></pre>
+<p><details class='config' open><summary>Config for this example</summary><p></p>
+<pre><code class="hljs css languages- scala">align = none
+</code></pre>
+</p></details>
+<blockquote>
+<p><strong>Pro tip</strong>: Enable this setting to minimize git diffs/conflicts from
+renamings and other refactorings.</p>
+</blockquote>
 <h4><a class="anchor" aria-hidden="true" id="align-some"></a><a href="#align-some" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>align=some</code></h4>
 <pre><code class="hljs css languages- scala formatted">x <span class="hljs-keyword">match</span> { <span class="hljs-comment">// true for case arrows</span>
   <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>  =&gt; <span class="hljs-number">22</span>
   <span class="hljs-keyword">case</span> <span class="hljs-number">22</span> =&gt; <span class="hljs-number">222</span>
 }
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">foo</span></span>(
-    a: <span class="hljs-type">Int</span>, <span class="hljs-comment">// true for defn site open paren</span>
-    b: <span class="hljs-type">String</span>
-): <span class="hljs-type">Int</span>
-foo(
-  a: <span class="hljs-type">Int</span>, <span class="hljs-comment">// true for call site open paren</span>
-  b: <span class="hljs-type">String</span>
-): <span class="hljs-type">Int</span>
 
 <span class="hljs-keyword">val</span> x = <span class="hljs-number">2</span> <span class="hljs-comment">// false for assignment</span>
 <span class="hljs-keyword">val</span> xx = <span class="hljs-number">22</span>
@@ -183,14 +193,9 @@ foo(
 <span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">BB</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span></span>
 </code></pre>
 <pre><code class="hljs css languages- scala original">x <span class="hljs-keyword">match</span> { <span class="hljs-comment">// true for case arrows</span>
-  <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>  =&gt; <span class="hljs-number">22</span>
+  <span class="hljs-keyword">case</span> <span class="hljs-number">2</span> =&gt; <span class="hljs-number">22</span>
   <span class="hljs-keyword">case</span> <span class="hljs-number">22</span> =&gt; <span class="hljs-number">222</span>
 }
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">foo</span></span>(a: <span class="hljs-type">Int</span>, <span class="hljs-comment">// true for defn site open paren</span>
-        b: <span class="hljs-type">String</span>): <span class="hljs-type">Int</span>
-foo(a: <span class="hljs-type">Int</span>, <span class="hljs-comment">// true for call site open paren</span>
-    b: <span class="hljs-type">String</span>): <span class="hljs-type">Int</span>
 
 <span class="hljs-keyword">val</span> x = <span class="hljs-number">2</span> <span class="hljs-comment">// false for assignment</span>
 <span class="hljs-keyword">val</span> xx = <span class="hljs-number">22</span>
@@ -199,56 +204,23 @@ foo(a: <span class="hljs-type">Int</span>, <span class="hljs-comment">// true fo
 <span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">BB</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span></span>
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">align</span> <span class="hljs-string">=</span> <span class="hljs-string">some</span>
+<pre><code class="hljs css languages- scala">align = some
 </code></pre>
 </p></details>
-<h4><a class="anchor" aria-hidden="true" id="align-none"></a><a href="#align-none" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>align=none</code></h4>
-<pre><code class="hljs css languages- scala formatted">x <span class="hljs-keyword">match</span> { <span class="hljs-comment">// false for case arrows</span>
-  <span class="hljs-keyword">case</span> <span class="hljs-number">2</span> =&gt; <span class="hljs-number">22</span> <span class="hljs-comment">// also comments!</span>
-  <span class="hljs-keyword">case</span> <span class="hljs-number">22</span> =&gt; <span class="hljs-number">222</span> <span class="hljs-comment">// don't align me!</span>
-}
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">foo</span></span>(
-    a: <span class="hljs-type">Int</span>, <span class="hljs-comment">// false for defn site</span>
-    b: <span class="hljs-type">String</span>
-): <span class="hljs-type">Int</span>
-foo(
-  a: <span class="hljs-type">Int</span>, <span class="hljs-comment">// false for call site</span>
-  b: <span class="hljs-type">String</span>
-): <span class="hljs-type">Int</span>
-</code></pre>
-<pre><code class="hljs css languages- scala original">x <span class="hljs-keyword">match</span> { <span class="hljs-comment">// false for case arrows</span>
-  <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>  =&gt; <span class="hljs-number">22</span> <span class="hljs-comment">// also comments!</span>
-  <span class="hljs-keyword">case</span> <span class="hljs-number">22</span> =&gt; <span class="hljs-number">222</span> <span class="hljs-comment">// don't align me!</span>
-}
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">foo</span></span>(a: <span class="hljs-type">Int</span>, <span class="hljs-comment">// false for defn site</span>
-        b: <span class="hljs-type">String</span>): <span class="hljs-type">Int</span>
-foo(a: <span class="hljs-type">Int</span>, <span class="hljs-comment">// false for call site</span>
-    b: <span class="hljs-type">String</span>): <span class="hljs-type">Int</span>
-</code></pre>
-<p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">align</span> <span class="hljs-string">=</span> <span class="hljs-string">none</span>
-</code></pre>
-</p></details>
-<blockquote>
-<p><strong>Pro tip</strong>: Enable this setting to minimize git diffs/conflicts from
-renamings and other refactorings.</p>
-</blockquote>
 <h4><a class="anchor" aria-hidden="true" id="align-more"></a><a href="#align-more" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>align=more</code></h4>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-keyword">val</span> x  = <span class="hljs-number">2</span> <span class="hljs-comment">// true for assignment</span>
 <span class="hljs-keyword">val</span> xx = <span class="hljs-number">22</span>
 
-<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">B</span>  <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> <span class="hljs-title">//</span> <span class="hljs-title">false</span> <span class="hljs-title">for</span> `<span class="hljs-keyword">extends</span>`</span>
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">B</span>  <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> <span class="hljs-title">//</span> <span class="hljs-title">true</span> <span class="hljs-title">for</span> `<span class="hljs-keyword">extends</span>`</span>
 <span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">BB</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span></span>
 
 q  -&gt; <span class="hljs-number">22</span> <span class="hljs-comment">// true for various infix operators</span>
 qq -&gt; <span class="hljs-number">3</span>  <span class="hljs-comment">// and also comments!</span>
 
 <span class="hljs-keyword">for</span> {
-  x  &lt;- <span class="hljs-type">List</span>(<span class="hljs-number">1</span>) <span class="hljs-comment">// true for alignment enumerator</span>
-  yy &lt;- <span class="hljs-type">List</span>(<span class="hljs-number">2</span>)
-} <span class="hljs-keyword">yield</span> x ** xx
+  x   &lt;- <span class="hljs-type">List</span>(<span class="hljs-number">1</span>) <span class="hljs-comment">// true for alignment enumerator</span>
+  yyy &lt;- <span class="hljs-type">List</span>(<span class="hljs-number">2</span>)
+} <span class="hljs-keyword">yield</span> x ** yyy
 
 x <span class="hljs-keyword">match</span> { <span class="hljs-comment">// true for multiple tokens across multiple lines</span>
   <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>  =&gt; <span class="hljs-number">1</span>  -&gt; <span class="hljs-number">2</span>  <span class="hljs-comment">// first</span>
@@ -273,16 +245,16 @@ libraryDependencies ++= <span class="hljs-type">Seq</span>(
 <pre><code class="hljs css languages- scala original"><span class="hljs-keyword">val</span> x = <span class="hljs-number">2</span> <span class="hljs-comment">// true for assignment</span>
 <span class="hljs-keyword">val</span> xx = <span class="hljs-number">22</span>
 
-<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> <span class="hljs-title">//</span> <span class="hljs-title">false</span> <span class="hljs-title">for</span> `<span class="hljs-keyword">extends</span>`</span>
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> <span class="hljs-title">//</span> <span class="hljs-title">true</span> <span class="hljs-title">for</span> `<span class="hljs-keyword">extends</span>`</span>
 <span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">BB</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span></span>
 
 q -&gt; <span class="hljs-number">22</span> <span class="hljs-comment">// true for various infix operators</span>
-qq -&gt; <span class="hljs-number">3</span> <span class="hljs-comment">// and also comments!</span>
+qq -&gt; <span class="hljs-number">3</span>   <span class="hljs-comment">// and also comments!</span>
 
 <span class="hljs-keyword">for</span> {
   x &lt;- <span class="hljs-type">List</span>(<span class="hljs-number">1</span>) <span class="hljs-comment">// true for alignment enumerator</span>
-  yy &lt;- <span class="hljs-type">List</span>(<span class="hljs-number">2</span>)
-} <span class="hljs-keyword">yield</span> x ** xx
+  yyy &lt;- <span class="hljs-type">List</span>(<span class="hljs-number">2</span>)
+} <span class="hljs-keyword">yield</span> x ** yyy
 
 x <span class="hljs-keyword">match</span> { <span class="hljs-comment">// true for multiple tokens across multiple lines</span>
   <span class="hljs-keyword">case</span> <span class="hljs-number">1</span> =&gt; <span class="hljs-number">1</span> -&gt; <span class="hljs-number">2</span> <span class="hljs-comment">// first</span>
@@ -305,14 +277,14 @@ libraryDependencies ++= <span class="hljs-type">Seq</span>(
 )
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">align</span> <span class="hljs-string">=</span> <span class="hljs-string">more</span>
+<pre><code class="hljs css languages- scala">align = more
 </code></pre>
 </p></details>
 <h4><a class="anchor" aria-hidden="true" id="align-most"></a><a href="#align-most" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>align=most</code></h4>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-keyword">for</span> {
   <span class="hljs-comment">// align &lt;- with =</span>
-  x  &lt;- <span class="hljs-type">List</span>()
-  yy = <span class="hljs-number">2</span>
+  x   &lt;- <span class="hljs-type">List</span>()
+  yyy = <span class="hljs-number">2</span>
   <span class="hljs-comment">// aligns body by arrow</span>
   zzz &lt;- <span class="hljs-keyword">new</span> <span class="hljs-type">Integer</span> {
           <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">value</span> </span>= <span class="hljs-number">3</span>
@@ -322,7 +294,7 @@ libraryDependencies ++= <span class="hljs-type">Seq</span>(
 <pre><code class="hljs css languages- scala original"><span class="hljs-keyword">for</span> {
   <span class="hljs-comment">// align &lt;- with =</span>
   x &lt;- <span class="hljs-type">List</span>()
-  yy = <span class="hljs-number">2</span>
+  yyy = <span class="hljs-number">2</span>
   <span class="hljs-comment">// aligns body by arrow</span>
   zzz &lt;- <span class="hljs-keyword">new</span> <span class="hljs-type">Integer</span> {
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">value</span> </span>= <span class="hljs-number">3</span>
@@ -330,12 +302,12 @@ libraryDependencies ++= <span class="hljs-type">Seq</span>(
 } <span class="hljs-keyword">yield</span> x
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">align</span> <span class="hljs-string">=</span> <span class="hljs-string">most</span>
+<pre><code class="hljs css languages- scala">align = most
 </code></pre>
 </p></details>
 <blockquote>
-<p><strong>Note</strong>. Only for the truest vertical aligners. This is a new option, feel
-free to open PR enabling more crazy vertical alignment here. Expect changes.</p>
+<p><strong>Note</strong>. Only for the truest vertical aligners. Feel free to open PR enabling
+more crazy vertical alignment here. Expect changes.</p>
 </blockquote>
 <h3><a class="anchor" aria-hidden="true" id="aligntokens"></a><a href="#aligntokens" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>align.tokens</code></h3>
 <p>Default: <strong>[caseArrow]</strong></p>
@@ -353,7 +325,7 @@ token. If no <code>owner</code> is provided, then all tree kinds will be matched
 }
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">align.tokens</span> <span class="hljs-string">=</span> <span class="hljs-string">[{code</span> <span class="hljs-string">=</span> <span class="hljs-string">"=&gt;"</span><span class="hljs-string">,</span> <span class="hljs-string">owner</span> <span class="hljs-string">=</span> <span class="hljs-string">"Case"</span><span class="hljs-string">}]</span>
+<pre><code class="hljs css languages- scala">align.tokens = [{code = <span class="hljs-string">"=&gt;"</span>, owner = <span class="hljs-string">"Case"</span>}]
 </code></pre>
 </p></details>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-keyword">val</span> x = <span class="hljs-type">List</span>(
@@ -367,22 +339,20 @@ token. If no <code>owner</code> is provided, then all tree kinds will be matched
 )
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">align.tokens</span> <span class="hljs-string">=</span> <span class="hljs-string">[</span>
-<span class="hljs-string">{code</span> <span class="hljs-string">=</span> <span class="hljs-string">"%"</span><span class="hljs-string">,</span> <span class="hljs-string">owner</span> <span class="hljs-string">=</span> <span class="hljs-string">"Term.ApplyInfix"</span><span class="hljs-string">},</span>
-<span class="hljs-string">{code</span> <span class="hljs-string">=</span> <span class="hljs-string">"%%"</span><span class="hljs-string">,</span> <span class="hljs-string">owner</span> <span class="hljs-string">=</span> <span class="hljs-string">"Term.ApplyInfix"</span><span class="hljs-string">}</span>
-<span class="hljs-string">]</span>
+<pre><code class="hljs css languages- scala">align.tokens = [
+{code = <span class="hljs-string">"%"</span>, owner = <span class="hljs-string">"Term.ApplyInfix"</span>},
+{code = <span class="hljs-string">"%%"</span>, owner = <span class="hljs-string">"Term.ApplyInfix"</span>}
+]
 </code></pre>
 </p></details>
 <p>To find the <code>owner</code> part for a custom tree, depend on Scalameta and use
 <code>scala.meta.Tree.productPrefix</code> from the the (for example, Ammonite) REPL.</p>
 <pre><code class="hljs css languages- scala">@ import $ivy.`org.scalameta:scalameta_2.12:4.0.0-M1`, scala.meta._
-
 @ val termMatch = q"x match { case 2 =&gt; foo(bar) }"
 termMatch: Term.Match = x match {
-  case 2 =&gt;
-    foo(bar)
+ case 2 =&gt;
+   foo(bar)
 }
-
 @ termMatch.structure
 res0: String = """
 Term.Match(Term.Name("x"), Seq(Case(Lit.Int(2), None, Term.Apply(Term.Name("foo"), Seq(Term.Name("bar"))))))
@@ -401,12 +371,12 @@ res1: String = "Term.Match"
 </code></pre>
 <pre><code class="hljs css languages- scala original"><span class="hljs-keyword">for</span> {
   x &lt;- <span class="hljs-keyword">new</span> <span class="hljs-type">Integer</span> {
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">value</span> </span>= <span class="hljs-number">2</span>
-  }
+     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">value</span> </span>= <span class="hljs-number">2</span>
+     }
 } <span class="hljs-keyword">yield</span> x
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">align.arrowEnumeratorGenerator</span> <span class="hljs-string">=</span> <span class="hljs-literal">false</span>
+<pre><code class="hljs css languages- scala">align.arrowEnumeratorGenerator = <span class="hljs-literal">false</span>
 </code></pre>
 </p></details>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-keyword">for</span> {
@@ -417,12 +387,12 @@ res1: String = "Term.Match"
 </code></pre>
 <pre><code class="hljs css languages- scala original"><span class="hljs-keyword">for</span> {
   x &lt;- <span class="hljs-keyword">new</span> <span class="hljs-type">Integer</span> {
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">value</span> </span>= <span class="hljs-number">2</span>
-  }
+     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">value</span> </span>= <span class="hljs-number">2</span>
+     }
 } <span class="hljs-keyword">yield</span> x
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">align.arrowEnumeratorGenerator</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">align.arrowEnumeratorGenerator = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="alignopenparencallsite"></a><a href="#alignopenparencallsite" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>align.openParenCallSite</code></h3>
@@ -432,40 +402,45 @@ res1: String = "Term.Match"
 function(arg1, <span class="hljs-comment">// align by (</span>
          arg2,
          arg3)
+
 function(argument1, argument2)
 </code></pre>
 <pre><code class="hljs css languages- scala original">foo(arg1, arg2)
 
 function(arg1, <span class="hljs-comment">// align by (</span>
-          arg2,
-          arg3)
+    arg2,
+ arg3)
+
 function(
   argument1,
   argument2)
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">align.openParenCallSite</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">align.openParenCallSite = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <pre><code class="hljs css languages- scala formatted">foo(arg1, arg2)
+
 function(
   arg1, <span class="hljs-comment">// no align by (</span>
   arg2,
   arg3
 )
+
 function(argument1, argument2)
 </code></pre>
 <pre><code class="hljs css languages- scala original">foo(arg1, arg2)
-function(
-  arg1, <span class="hljs-comment">// no align by (</span>
-  arg2,
-  arg3)
+
+function(arg1, <span class="hljs-comment">// no align by (</span>
+    arg2,
+ arg3)
+
 function(
   argument1,
   argument2)
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">align.openParenCallSite</span> <span class="hljs-string">=</span> <span class="hljs-literal">false</span>
+<pre><code class="hljs css languages- scala">align.openParenCallSite = <span class="hljs-literal">false</span>
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="alignopenparendefnsite"></a><a href="#alignopenparendefnsite" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>align.openParenDefnSite</code></h3>
@@ -480,11 +455,11 @@ function(
 <pre><code class="hljs css languages- scala original"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntString</span>(<span class="hljs-params">int: <span class="hljs-type">Int</span>, string: <span class="hljs-type">String</span></span>)</span>
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntStringLong</span>(<span class="hljs-params">int: <span class="hljs-type">Int</span>,
-                    string: <span class="hljs-type">String</span>,
-                    long: <span class="hljs-type">Long</span></span>)</span>
+    string: <span class="hljs-type">String</span>,
+  long: <span class="hljs-type">Long</span></span>)</span>
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">align.openParenDefnSite</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">align.openParenDefnSite = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntString</span>(<span class="hljs-params">
@@ -501,28 +476,26 @@ function(
 <pre><code class="hljs css languages- scala original"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntString</span>(<span class="hljs-params">int: <span class="hljs-type">Int</span>, string: <span class="hljs-type">String</span></span>)</span>
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntStringLong</span>(<span class="hljs-params">
-  int: <span class="hljs-type">Int</span>,
-  string: <span class="hljs-type">String</span>,
+      int: <span class="hljs-type">Int</span>,
+    string: <span class="hljs-type">String</span>,
   long: <span class="hljs-type">Long</span>
 </span>)</span>
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">align.openParenDefnSite</span> <span class="hljs-string">=</span> <span class="hljs-literal">false</span>
+<pre><code class="hljs css languages- scala">align.openParenDefnSite = <span class="hljs-literal">false</span>
 </code></pre>
 </p></details>
 <h2><a class="anchor" aria-hidden="true" id="newlines"></a><a href="#newlines" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Newlines</h2>
 <p>The <code>newlines.*</code> options are used to configure when and where <code>scalafmt</code> should
 insert newlines.</p>
-<p>// TODO(gabro): link to Vertical Multiline section</p>
 <blockquote>
-<p>You might be interested in the Vertical Multiline section.</p>
+<p>You might be interested in the <a href="#vertical-multiline">Vertical Multiline</a> section.</p>
 </blockquote>
 <h3><a class="anchor" aria-hidden="true" id="newlinesalwaysbeforetoplevelstatements"></a><a href="#newlinesalwaysbeforetoplevelstatements" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>newlines.alwaysBeforeTopLevelStatements</code></h3>
 <p>Default: <code>newlines.alwaysBeforeTopLevelStatements = false</code></p>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-keyword">import</span> org.scalafmt
-
-<span class="hljs-keyword">package</span> core {
-  <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">O</span> </span>{
+<span class="hljs-keyword">package</span> core { <span class="hljs-comment">// no newline added here</span>
+  <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">O</span> </span>{ <span class="hljs-comment">// nor here</span>
     <span class="hljs-keyword">val</span> x1 = <span class="hljs-number">1</span>
     <span class="hljs-keyword">val</span> x2 = <span class="hljs-number">2</span>
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">A</span> </span>= <span class="hljs-string">"A"</span>
@@ -531,9 +504,8 @@ insert newlines.</p>
 }
 </code></pre>
 <pre><code class="hljs css languages- scala original"><span class="hljs-keyword">import</span> org.scalafmt
-
-<span class="hljs-keyword">package</span> core {
-  <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">O</span> </span>{
+<span class="hljs-keyword">package</span> core { <span class="hljs-comment">// no newline added here</span>
+  <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">O</span> </span>{ <span class="hljs-comment">// nor here</span>
     <span class="hljs-keyword">val</span> x1 = <span class="hljs-number">1</span>
     <span class="hljs-keyword">val</span> x2 = <span class="hljs-number">2</span>
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">A</span> </span>= <span class="hljs-string">"A"</span>
@@ -542,7 +514,7 @@ insert newlines.</p>
 }
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">newlines.alwaysBeforeTopLevelStatements</span> <span class="hljs-string">=</span> <span class="hljs-literal">false</span>
+<pre><code class="hljs css languages- scala">newlines.alwaysBeforeTopLevelStatements = <span class="hljs-literal">false</span>
 </code></pre>
 </p></details>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-keyword">import</span> org.scalafmt
@@ -558,7 +530,6 @@ insert newlines.</p>
 }
 </code></pre>
 <pre><code class="hljs css languages- scala original"><span class="hljs-keyword">import</span> org.scalafmt
-
 <span class="hljs-keyword">package</span> core {
   <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">O</span> </span>{
     <span class="hljs-keyword">val</span> x1 = <span class="hljs-number">1</span>
@@ -569,7 +540,7 @@ insert newlines.</p>
 }
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">newlines.alwaysBeforeTopLevelStatements</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">newlines.alwaysBeforeTopLevelStatements = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="newlinesalwaysbeforeelseaftercurlyif"></a><a href="#newlinesalwaysbeforeelseaftercurlyif" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>newlines.alwaysBeforeElseAfterCurlyIf</code></h3>
@@ -581,14 +552,14 @@ insert newlines.</p>
   bar()
 }
 </code></pre>
-<pre><code class="hljs css languages- scala original"><span class="hljs-keyword">if</span>(someCond) {
+<pre><code class="hljs css languages- scala original"><span class="hljs-keyword">if</span> (someCond) {
   foo()
 } <span class="hljs-keyword">else</span> {
   bar()
 }
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">newlines.alwaysBeforeElseAfterCurlyIf</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">newlines.alwaysBeforeElseAfterCurlyIf = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-keyword">if</span> (someCond) {
@@ -597,14 +568,15 @@ insert newlines.</p>
   bar()
 }
 </code></pre>
-<pre><code class="hljs css languages- scala original"><span class="hljs-keyword">if</span>(someCond) {
+<pre><code class="hljs css languages- scala original"><span class="hljs-keyword">if</span> (someCond) {
   foo()
-} <span class="hljs-keyword">else</span> {
+}
+<span class="hljs-keyword">else</span> {
   bar()
 }
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">newlines.alwaysBeforeElseAfterCurlyIf</span> <span class="hljs-string">=</span> <span class="hljs-literal">false</span>
+<pre><code class="hljs css languages- scala">newlines.alwaysBeforeElseAfterCurlyIf = <span class="hljs-literal">false</span>
 </code></pre>
 </p></details>
 <h2><a class="anchor" aria-hidden="true" id="rewrite-rules"></a><a href="#rewrite-rules" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Rewrite Rules</h2>
@@ -634,7 +606,7 @@ future recover {
 } map (_.toString)
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">rewrite.rules</span> <span class="hljs-string">=</span> <span class="hljs-string">[AvoidInfix]</span>
+<pre><code class="hljs css languages- scala">rewrite.rules = [<span class="hljs-type">AvoidInfix</span>]
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="expandimportselectors"></a><a href="#expandimportselectors" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>ExpandImportSelectors</code></h3>
@@ -660,7 +632,7 @@ future recover {
   }
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">rewrite.rules</span> <span class="hljs-string">=</span> <span class="hljs-string">[ExpandImportSelectors]</span>
+<pre><code class="hljs css languages- scala">rewrite.rules = [<span class="hljs-type">ExpandImportSelectors</span>]
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="redundantbraces"></a><a href="#redundantbraces" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>RedundantBraces</code></h3>
@@ -676,7 +648,7 @@ future recover {
 }
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">rewrite.rules</span> <span class="hljs-string">=</span> <span class="hljs-string">[RedundantBraces]</span>
+<pre><code class="hljs css languages- scala">rewrite.rules = [<span class="hljs-type">RedundantBraces</span>]
 </code></pre>
 </p></details>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-string">q"Hello <span class="hljs-subst">$name</span>"</span>
@@ -684,8 +656,8 @@ future recover {
 <pre><code class="hljs css languages- scala original"><span class="hljs-string">q"Hello <span class="hljs-subst">${name}</span>"</span>
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">rewrite.rules</span> <span class="hljs-string">=</span> <span class="hljs-string">[RedundantBraces]</span>
-<span class="hljs-string">rewrite.redundantBraces.stringInterpolation</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">rewrite.rules = [<span class="hljs-type">RedundantBraces</span>]
+rewrite.redundantBraces.stringInterpolation = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <p>Configuration options and default values:</p>
@@ -709,7 +681,7 @@ to #1147)</li>
 } <span class="hljs-keyword">yield</span> a
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">rewrite.rules</span> <span class="hljs-string">=</span> <span class="hljs-string">[RedundantParens]</span>
+<pre><code class="hljs css languages- scala">rewrite.rules = [<span class="hljs-type">RedundantParens</span>]
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="sortmodifiers"></a><a href="#sortmodifiers" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>SortModifiers</code></h3>
@@ -723,7 +695,7 @@ and class parameters.</p>
 <span class="hljs-keyword">lazy</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">implicit</span> <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> y = <span class="hljs-number">42</span>
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">rewrite.rules</span> <span class="hljs-string">=</span> <span class="hljs-string">[SortModifiers]</span>
+<pre><code class="hljs css languages- scala">rewrite.rules = [<span class="hljs-type">SortModifiers</span>]
 </code></pre>
 </p></details>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span>(<span class="hljs-params">
@@ -733,38 +705,44 @@ and class parameters.</p>
 </span>)</span>
 </code></pre>
 <pre><code class="hljs css languages- scala original"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span>(<span class="hljs-params">
-  implicit
-  final private val i1: <span class="hljs-type">Int</span>,
-  private final val i2: <span class="hljs-type">String</span>
+    implicit
+    final private val i1: <span class="hljs-type">Int</span>,
+    private final val i2: <span class="hljs-type">String</span>
 </span>)</span>
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">rewrite.rules</span> <span class="hljs-string">=</span> <span class="hljs-string">[SortModifiers]</span>
+<pre><code class="hljs css languages- scala">rewrite.rules = [<span class="hljs-type">SortModifiers</span>]
 </code></pre>
 </p></details>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-keyword">sealed</span> <span class="hljs-keyword">protected</span>[<span class="hljs-type">X</span>] <span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">ADT</span></span>
 <span class="hljs-keyword">final</span> <span class="hljs-keyword">private</span> <span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">A1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ADT</span></span>
-<span class="hljs-keyword">final</span> <span class="hljs-keyword">private</span> <span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A2</span>(<span class="hljs-params">x: <span class="hljs-type">Int</span></span>)</span>
+<span class="hljs-keyword">final</span> <span class="hljs-keyword">private</span> <span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A2</span>(<span class="hljs-params">a: <span class="hljs-type">Int</span></span>)</span>
     <span class="hljs-keyword">extends</span> <span class="hljs-type">ADT</span>
 </code></pre>
 <pre><code class="hljs css languages- scala original"><span class="hljs-keyword">sealed</span> <span class="hljs-keyword">protected</span>[<span class="hljs-type">X</span>] <span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">ADT</span></span>
 <span class="hljs-keyword">final</span> <span class="hljs-keyword">private</span> <span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">A1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ADT</span></span>
-<span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A2</span>(<span class="hljs-params">x: <span class="hljs-type">Int</span></span>) <span class="hljs-keyword">extends</span> <span class="hljs-title">ADT</span></span>
+<span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A2</span>(<span class="hljs-params">a: <span class="hljs-type">Int</span></span>)</span>
+    <span class="hljs-keyword">extends</span> <span class="hljs-type">ADT</span>
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">rewrite.rules</span> <span class="hljs-string">=</span> <span class="hljs-string">[SortModifiers]</span>
+<pre><code class="hljs css languages- scala">rewrite.rules = [<span class="hljs-type">SortModifiers</span>]
 </code></pre>
 </p></details>
 <p>If you choose the non-default sort order then you have to specify all eight
 modifiers in the order you wish to see them. Hint: since some modifiers are
 mutually exclusive, you might want to order them next to each other.</p>
-<p>Example config:</p>
+<pre><code class="hljs css languages- scala formatted"><span class="hljs-keyword">implicit</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">val</span> x = <span class="hljs-number">2</span>
+</code></pre>
+<pre><code class="hljs css languages- scala original"><span class="hljs-keyword">override</span> <span class="hljs-keyword">implicit</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">val</span> x = <span class="hljs-number">2</span>
+</code></pre>
+<p><details class='config' open><summary>Config for this example</summary><p></p>
 <pre><code class="hljs css languages- scala">rewrite.rules = [<span class="hljs-type">SortModifiers</span>]
 rewrite.sortModifiers.order = [
-  <span class="hljs-string">"implicit"</span>, <span class="hljs-string">"final"</span>, <span class="hljs-string">"sealed"</span>, <span class="hljs-string">"abstract"</span>,
-  <span class="hljs-string">"override"</span>, <span class="hljs-string">"private"</span>, <span class="hljs-string">"protected"</span>, <span class="hljs-string">"lazy"</span>
+<span class="hljs-string">"implicit"</span>, <span class="hljs-string">"final"</span>, <span class="hljs-string">"sealed"</span>, <span class="hljs-string">"abstract"</span>,
+<span class="hljs-string">"override"</span>, <span class="hljs-string">"private"</span>, <span class="hljs-string">"protected"</span>, <span class="hljs-string">"lazy"</span>
 ]
 </code></pre>
+</p></details>
 <h3><a class="anchor" aria-hidden="true" id="prefercurlyfors"></a><a href="#prefercurlyfors" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>PreferCurlyFors</code></h3>
 <p>Replaces parentheses into curly braces in for comprehensions that contain
 multiple enumerator generators.</p>
@@ -777,7 +755,7 @@ multiple enumerator generators.</p>
  <span class="hljs-keyword">yield</span> (a, b)
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">rewrite.rules</span> <span class="hljs-string">=</span> <span class="hljs-string">[PreferCurlyFors]</span>
+<pre><code class="hljs css languages- scala">rewrite.rules = [<span class="hljs-type">PreferCurlyFors</span>]
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="sortimports"></a><a href="#sortimports" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>SortImports</code></h3>
@@ -787,7 +765,7 @@ multiple enumerator generators.</p>
 <pre><code class="hljs css languages- scala original"><span class="hljs-keyword">import</span> foo.{<span class="hljs-type">Zilch</span>, bar, <span class="hljs-type">Random</span>, sand}
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">rewrite.rules</span> <span class="hljs-string">=</span> <span class="hljs-string">[SortImports]</span>
+<pre><code class="hljs css languages- scala">rewrite.rules = [<span class="hljs-type">SortImports</span>]
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="asciisortimports"></a><a href="#asciisortimports" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>AsciiSortImports</code></h3>
@@ -797,7 +775,7 @@ multiple enumerator generators.</p>
 <pre><code class="hljs css languages- scala original"><span class="hljs-keyword">import</span> foo.{~&gt;, `symbol`, bar, <span class="hljs-type">Random</span>}
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">rewrite.rules</span> <span class="hljs-string">=</span> <span class="hljs-string">[AsciiSortImports]</span>
+<pre><code class="hljs css languages- scala">rewrite.rules = [<span class="hljs-type">AsciiSortImports</span>]
 </code></pre>
 </p></details>
 <h2><a class="anchor" aria-hidden="true" id="vertical-multiline"></a><a href="#vertical-multiline" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Vertical Multiline</h2>
@@ -837,8 +815,8 @@ the <a href="#verticalmultilinearitythreshold"><code>verticalMultiline.arityThre
 }
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">verticalMultiline.atDefnSite</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
-<span class="hljs-string">verticalMultiline.arityThreshold</span> <span class="hljs-string">=</span> <span class="hljs-number">2</span>
+<pre><code class="hljs css languages- scala">verticalMultiline.atDefnSite = <span class="hljs-literal">true</span>
+verticalMultiline.arityThreshold = <span class="hljs-number">2</span>
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="verticalmultilinenewlineafteropenparen"></a><a href="#verticalmultilinenewlineafteropenparen" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>verticalMultiline.newlineAfterOpenParen</code></h3>
@@ -854,10 +832,10 @@ the <a href="#verticalmultilinearitythreshold"><code>verticalMultiline.arityThre
 <pre><code class="hljs css languages- scala original"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">other</span></span>(a: <span class="hljs-type">String</span>, b: <span class="hljs-type">String</span>)(c: <span class="hljs-type">String</span>, d: <span class="hljs-type">String</span>) = a + b + c
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">continuationIndent.defnSite</span> <span class="hljs-string">=</span> <span class="hljs-number">2</span>
-<span class="hljs-string">verticalMultiline.atDefnSite</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
-<span class="hljs-string">verticalMultiline.arityThreshold</span> <span class="hljs-string">=</span> <span class="hljs-number">2</span>
-<span class="hljs-string">verticalMultiline.newlineAfterOpenParen</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">continuationIndent.defnSite = <span class="hljs-number">2</span>
+verticalMultiline.atDefnSite = <span class="hljs-literal">true</span>
+verticalMultiline.arityThreshold = <span class="hljs-number">2</span>
+verticalMultiline.newlineAfterOpenParen = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="verticalmultilinenewlineafteropenparen-1"></a><a href="#verticalmultilinenewlineafteropenparen-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>verticalMultiline.newlineAfterOpenParen</code></h3>
@@ -873,9 +851,9 @@ the <a href="#verticalmultilinearitythreshold"><code>verticalMultiline.arityThre
 <pre><code class="hljs css languages- scala original"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">format</span></span>(code: <span class="hljs-type">String</span>, age: <span class="hljs-type">Int</span>)(<span class="hljs-keyword">implicit</span> ev: <span class="hljs-type">Parser</span>, c: <span class="hljs-type">Context</span>): <span class="hljs-type">String</span>
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">maxColumn</span> <span class="hljs-string">=</span> <span class="hljs-number">60</span>
-<span class="hljs-string">verticalMultiline.atDefnSite</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
-<span class="hljs-string">verticalMultiline.newlineBeforeImplicitKW</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">maxColumn = <span class="hljs-number">60</span>
+verticalMultiline.atDefnSite = <span class="hljs-literal">true</span>
+verticalMultiline.newlineBeforeImplicitKW = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <h2><a class="anchor" aria-hidden="true" id="disabling-formatting"></a><a href="#disabling-formatting" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Disabling Formatting</h2>
@@ -921,7 +899,7 @@ the <a href="#verticalmultilinearitythreshold"><code>verticalMultiline.arityThre
   <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">binPack.literalArgumentLists</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">binPack.literalArgumentLists = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-keyword">val</span> secret: <span class="hljs-type">List</span>[<span class="hljs-type">Bit</span>] = <span class="hljs-type">List</span>(
@@ -943,7 +921,7 @@ the <a href="#verticalmultilinearitythreshold"><code>verticalMultiline.arityThre
 <pre><code class="hljs css languages- scala original"><span class="hljs-keyword">val</span> secret: <span class="hljs-type">List</span>[<span class="hljs-type">Bit</span>] = <span class="hljs-type">List</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">binPack.literalArgumentLists</span> <span class="hljs-string">=</span> <span class="hljs-literal">false</span>
+<pre><code class="hljs css languages- scala">binPack.literalArgumentLists = <span class="hljs-literal">false</span>
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="includecurlybraceinselectchains"></a><a href="#includecurlybraceinselectchains" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>includeCurlyBraceInSelectChains</code></h3>
@@ -954,14 +932,13 @@ the <a href="#verticalmultilinearitythreshold"><code>verticalMultiline.arityThre
   }
   .filter(_ &gt; <span class="hljs-number">2</span>)
 </code></pre>
-<pre><code class="hljs css languages- scala original"><span class="hljs-type">List</span>(<span class="hljs-number">1</span>)
-  .map { x =&gt;
+<pre><code class="hljs css languages- scala original"><span class="hljs-type">List</span>(<span class="hljs-number">1</span>).map { x =&gt;
     x + <span class="hljs-number">2</span>
   }
   .filter(_ &gt; <span class="hljs-number">2</span>)
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">includeCurlyBraceInSelectChains</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">includeCurlyBraceInSelectChains = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <pre><code class="hljs css languages- scala formatted"><span class="hljs-type">List</span>(<span class="hljs-number">1</span>).map { x =&gt;
@@ -975,36 +952,33 @@ the <a href="#verticalmultilinearitythreshold"><code>verticalMultiline.arityThre
   .filter(_ &gt; <span class="hljs-number">2</span>)
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">includeCurlyBraceInSelectChains</span> <span class="hljs-string">=</span> <span class="hljs-literal">false</span>
+<pre><code class="hljs css languages- scala">includeCurlyBraceInSelectChains = <span class="hljs-literal">false</span>
 </code></pre>
 </p></details>
 <h3><a class="anchor" aria-hidden="true" id="optinbreakchainonfirstmethoddot"></a><a href="#optinbreakchainonfirstmethoddot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>optIn.breakChainOnFirstMethodDot</code></h3>
 <p>Default: <code>optIn.breakChainOnFirstMethodDot = true</code></p>
-<pre><code class="hljs css languages- scala"><span class="hljs-comment">// original</span>
+<pre><code class="hljs css languages- scala formatted"><span class="hljs-comment">// collapse into a single line</span>
+foo.map(_ + <span class="hljs-number">1</span>).filter(_ &gt; <span class="hljs-number">2</span>)
+</code></pre>
+<pre><code class="hljs css languages- scala original"><span class="hljs-comment">// collapse into a single line</span>
 foo
   .map(_ + <span class="hljs-number">1</span>)
   .filter(_ &gt; <span class="hljs-number">2</span>)
 </code></pre>
-<pre><code class="hljs css languages- scala formatted">foo
-  .map(_ + <span class="hljs-number">1</span>)
-  .filter(_ &gt; <span class="hljs-number">2</span>)
-</code></pre>
-<pre><code class="hljs css languages- scala original">foo
-  .map(_ + <span class="hljs-number">1</span>)
-  .filter(_ &gt; <span class="hljs-number">2</span>)
-</code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">optIn.breakChainOnFirstMethodDot</span> <span class="hljs-string">=</span> <span class="hljs-literal">true</span>
+<pre><code class="hljs css languages- scala">optIn.breakChainOnFirstMethodDot = <span class="hljs-literal">false</span>
 </code></pre>
 </p></details>
-<pre><code class="hljs css languages- scala formatted">foo.map(_ + <span class="hljs-number">1</span>).filter(_ &gt; <span class="hljs-number">2</span>)
+<pre><code class="hljs css languages- scala formatted">foo
+  .map(_ + <span class="hljs-number">1</span>) <span class="hljs-comment">// preserve existing newlines</span>
+  .filter(_ &gt; <span class="hljs-number">2</span>)
 </code></pre>
 <pre><code class="hljs css languages- scala original">foo
-  .map(_ + <span class="hljs-number">1</span>)
+  .map(_ + <span class="hljs-number">1</span>) <span class="hljs-comment">// preserve existing newlines</span>
   .filter(_ &gt; <span class="hljs-number">2</span>)
 </code></pre>
 <p><details class='config' open><summary>Config for this example</summary><p></p>
-<pre><code class="hljs css languages- yaml"><span class="hljs-string">optIn.breakChainOnFirstMethodDot</span> <span class="hljs-string">=</span> <span class="hljs-literal">false</span>
+<pre><code class="hljs css languages- scala">optIn.breakChainOnFirstMethodDot = <span class="hljs-literal">true</span>
 </code></pre>
 </p></details>
 <h2><a class="anchor" aria-hidden="true" id="other"></a><a href="#other" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Other</h2>
@@ -1095,6 +1069,7 @@ rewrite<span class="hljs-selector-class">.neverInfix</span><span class="hljs-sel
   <span class="hljs-string">"contain.*"</span>
   <span class="hljs-string">"must.*"</span>
   <span class="hljs-keyword">in</span>
+  ignore
   be
   taggedAs
   thrownBy
@@ -1102,6 +1077,15 @@ rewrite<span class="hljs-selector-class">.neverInfix</span><span class="hljs-sel
   have
   when
   size
+  only
+  noneOf
+  oneElementOf
+  noElementsOf
+  atLeastOneElementOf
+  atMostOneElementOf
+  allElementsOf
+  inOrderElementsOf
+  theSameElementsAs
 ]
 indentOperator<span class="hljs-selector-class">.include</span> = <span class="hljs-string">".*"</span>
 indentOperator<span class="hljs-selector-class">.exclude</span> = <span class="hljs-string">"^(&amp;&amp;|\|\|)$"</span>
